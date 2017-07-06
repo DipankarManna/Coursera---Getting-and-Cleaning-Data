@@ -19,7 +19,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
  
 ### The analysis is done in 5 steps :
 
- 1. Merging the training and test sets to create a single data set, the files are read and all the columns are named accordingly.
+ #### 1. Merging the training and test sets to create a single data set, the files are read and all the columns are named accordingly.
   After setting the source directory for the files, read into tables the data located in
 - features.txt
 - activity_labels.txt
@@ -30,17 +30,17 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 - x_test.txt
 - y_test.txt
 
- 2. only those columns with the mean and standard deviation measures from the whole dataset are extracted.
+ #### 2. only those columns with the mean and standard deviation measures from the whole dataset are extracted.
   Create a logcal vector that contains TRUE values for the ID, mean and stdev columns and FALSE values for the others.
   Subset this data to keep only the necessary columns.
   
- 3. Proper activity names  are used to name the activities.
+ #### 3. Proper activity names  are used to name the activities.
  Merge data subset with the activityType table to include the descriptive activity names
  
- 4. Data set is labelled with descriptive variable names.
+ #### 4. Data set is labelled with descriptive variable names.
  Use gsub function for pattern replacement to clean up the data labels.
  
- 5. A new dataset is generated with all the average measures for each subject. The output is finally generated in a text file named 'tidyset.txt'.
+ #### 5. A new dataset is generated with all the average measures for each subject. The output is finally generated in a text file named 'tidyset.txt'.
  Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject
   
 ### Variables:   
